@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+<mat-toolbar-row color="primary">
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon"></mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-card>
+  <mat-list>
+    <h3>Messages:</h3>
+  <mat-list-item *ngFor="let product of products">
+      <img src="{{'./assets/product.icon'+'.jpg'}}">
+      <p mat-line> {{product.desc}} </p>
+      <p mat-line> {{product.price}} </p>
+      <i class="material-icons md-18">add</i>
+  </mat-list-item>
+</mat-list>
+</mat-card>
